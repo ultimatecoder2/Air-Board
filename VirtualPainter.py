@@ -56,7 +56,7 @@ while True:
 
         # 4. If Selection Mode - Two finger are up
         if fingers[1] and fingers[2]:
-            # xp, yp = 0, 0
+            xp, yp = 0, 0
             print("Selection Mode")
             # # Checking for the click
             if y1 < 125:
@@ -81,7 +81,7 @@ while True:
             if xp == 0 and yp == 0:
                 xp, yp = x1, y1
 
-            cv2.line(img, (xp, yp), (x1, y1), drawColor, brushThickness)
+            # cv2.line(img, (xp, yp), (x1, y1), drawColor, brushThickness)
 
             if drawColor == (0, 0, 0):
                 cv2.line(img, (xp, yp), (x1, y1), drawColor, eraserThickness)
@@ -96,6 +96,7 @@ while True:
 
         # # Clear Canvas when all fingers are up
         if all (x >= 1 for x in fingers):
+            xp, yp = 0, 0
             imgCanvas = np.zeros((720, 1280, 3), np.uint8)
 
     imgGray = cv2.cvtColor(imgCanvas, cv2.COLOR_BGR2GRAY)
