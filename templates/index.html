@@ -39,7 +39,7 @@
         <div>
             <nav class="navbar navbar-expand-sm navbar-dark bg-primary main-nav navbar-togglable rounded-radius">
 
-                <a class="navbar-brand d-block" href="">
+                <a class="navbar-brand d-block" href="/">
                     <h4>Air-Board</h4>
                 </a>
                 <!-- Toggler -->
@@ -50,14 +50,14 @@
                 <!-- Collapse -->
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <!-- Links -->
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto nav__links">
                         <li class="nav-item ">
-                            <a href="about.html" class="nav-link js-scroll-trigger">
+                            <a href="#use" class="nav-link js-scroll-trigger nav__link">
                                 How to use
                             </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="about.html" class="nav-link js-scroll-trigger">
+                            <a href="#canvas" class="nav-link js-scroll-trigger nav__link">
                                 Airboard Canvas
                             </a>
                         </li>
@@ -99,7 +99,7 @@
         </div> <!-- / .container -->
     </section>
 
-    <section class="section bg-grey" id="feature">
+    <section class="section bg-grey" id="use">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-center">
@@ -158,7 +158,7 @@
     </section>
 
     <!---->
-    <section class="section" id="blog">
+    <section class="section" id="canvas">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 text-center">
@@ -184,31 +184,6 @@
         </div>
     </section>
 
-    <section class="section bg-grey" id="feature">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 col-lg-6 text-center">
-                    <div class="section-heading">
-                        <!-- Heading -->
-                        <h2 class="section-title">
-                            How It Works
-                        </h2>
-
-                        <!-- Subheading -->
-                        <p>
-                            
-                        </p>
-
-                    </div>
-                </div>
-            </div>
-
-            <div class="row justy-content-center">
-
-                
-            </div>
-        </div> <!-- / .container -->
-    </section>
 
     <footer class="section " id="footer">
         <div class="overlay footer-overlay"></div>
@@ -221,7 +196,12 @@
                         <a href="#" class="footer-brand text-white">
                             Air-Board
                         </a>
-                        <p >Each theme featured at the Bootstrap marketplace has been reviewed by Bootstrap's creators.Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <p >
+                            Air-Board uses computer vision to detect hand gestures. On the basis of user's hand movement, canvas is updated and user's content is visible. 
+                            Currently, Air-Board supports writing, and erasing. More features will be added soon in future. For using Air-Board, you must provide access to webcam.
+                            <br/><br/>
+                            This project has been developed by <a href="https://github.com/ultimatecoder2" target="_blank" class="current-year">Deepanshu Jindal</a>. You can find its source code <a href="https://github.com/ultimatecoder2/Air-Board" target="_blank" class="current-year">here</a>
+                        </p>
                     </div>
                 </div>
             </div> <!-- / .row -->
