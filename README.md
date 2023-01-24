@@ -3,8 +3,29 @@ Have you ever wondered if you could write in air? <br/>
 With airboard you can do so. Airboard uses web-cam to track hand movements of a user, and draws the figure accordingly.
 
 
-## 2) Setting up project locally
-### To create virtual environment
+## Contribute
+This app is an open source project, to contribute you should follow these steps.
+
+### Prerequisites
+You must have python installed on your pc.
+
+### 1. Fork the Repository
+
+To contribute, fork this repository to your own github account.
+
+### 2. Clone the project
+
+```bash
+  git clone https://github.com/ultimatecoder2/Air-Board
+```
+
+Go to the project directory
+
+```bash
+  cd Air-Board
+```
+### 3. Setting up project locally
+#### To create virtual environment
 ```
 python -m venv <ENVIRONMENT_NAME>
 ```
@@ -14,23 +35,34 @@ for e.g.
 python -m venv env
 ```
 
-### To activate virtual environment
+#### To activate virtual environment
 
 ```bash
 <ENVIRONMENT_NAME>\Scripts\activate
 ``` 
 
-### To install dependencies
+#### To install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### To create / update requirements.txt
+### 4. Start the flask server for running backend
+```bash
+python -m flask run
+```
+
+### 5. Start Coding
+Now you can start working on the existing issues and send PR's/
+
+
+### Other useful commands
+#### To create / update requirements.txt
 
 ```bash
 pip freeze > requirements.txt
 ```
+
 
 ### Project Status
 This project is currently in the development stage. <br/>
